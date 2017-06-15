@@ -10,16 +10,20 @@ a:hover {
 }
 
 /* Custom default button */
+.btn,
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  border: none;
+  font-family: 'Roboto', sans-serif;
 }
 
-
+.form-text,
+.text-muted, {
+  color: #fff;
+}
 /*
  * Base structure
  */
@@ -29,7 +33,7 @@ body {
   height: 100%;
   background: url(../img/virtulaw.jpg) no-repeat center fixed;
   background-size: cover;
-  font-family: 'Cormorant SC', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 22px;
 }
 
@@ -54,15 +58,10 @@ body {
   margin-left: auto;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 2rem;
-}
 
 .logo{
   width: 300px;
   height: 99px;
-  background-color: rgba(241, 236, 247, 0.25);
 }
 
 /*
@@ -70,7 +69,9 @@ body {
  */
 
 .masthead {
-  margin-bottom: 2rem;
+  margin-top: 0;
+  padding-top: 0;
+  position: top;
 }
 
 .masthead-brand {
@@ -118,7 +119,6 @@ body {
   /* Pull out the header and footer */
   .masthead {
     position: fixed;
-    top: 0;
   }
   .mastfoot {
     position: fixed;
