@@ -66,6 +66,9 @@ body {
   form{
     padding-top: 0.5em;
   }
+  .text-center{
+    text-align: left;
+  }
 }
 
 /*
